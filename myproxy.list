@@ -12,7 +12,6 @@ DOMAIN,5.6bcloud.top
 DOMAIN,f-droid.org
 DOMAIN,acg.gy
 DOMAIN,ifulibl.net
-DOMAIN,openwrt.org
 DOMAIN-SUFFIX,spring-plus.net
 DOMAIN-SUFFIX,soul-plus.net
 DOMAIN-SUFFIX,north-plus.net
@@ -49,3 +48,4 @@ DOMAIN-SUFFIX,gitbook.io
 DOMAIN-SUFFIX,cool18.com
 DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.org
+DOMAIN-SUFFIX,openwrt.org
