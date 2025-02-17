@@ -11,9 +11,7 @@ DOMAIN,6.66jc.top
 DOMAIN,5.6bcloud.top
 DOMAIN,f-droid.org
 DOMAIN,acg.gy
-DOMAIN,sleazyfork.org
 DOMAIN,ifulibl.net
-DOMAIN,greasyfork.org
 DOMAIN,ideogram.ai
 DOMAIN,rjhome.me
 DOMAIN-SUFFIX,spring-plus.net
@@ -54,4 +52,5 @@ DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,openwrt.org
 DOMAIN-SUFFIX,onlyfans.com
-
+DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,sleazyfork.org
