@@ -10,7 +10,6 @@ DOMAIN,metrics1.data.hicloud.com
 DOMAIN,dns.weixin.qq.com.cn
 DOMAIN,zhihu-web-analytics.zhihu.com
 DOMAIN,apd-pcdnwxstat.teg.tencent-cloud.net
-DOMAIN-SUFFIX,trace.qq.com
 DOMAIN,inapps.appsflyer.com
 DOMAIN,ylog.huya.com
 DOMAIN,statwup.huya.com
