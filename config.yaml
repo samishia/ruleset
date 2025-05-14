@@ -10,7 +10,11 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-  Airport2:
+override:
+skip-cert-verify: true
+udp: false
+exclude-filter: "x4"
+ Airport2:
     url: "机场订阅"
     type: http
     interval: 86400
@@ -22,6 +26,9 @@ proxy-providers:
 override:
 skip-cert-verify: true
 udp: false
+exclude-filter: "x4"
+
+
 global-ua: clash
 
 # 节点信息
@@ -37,6 +44,7 @@ tproxy-port: 7894
 allow-lan: true
 bind-address: "*"
 ipv6: false
+mode: rule
 tcp-concurrent: true
 log-level: info
 find-process-mode: 'off'
