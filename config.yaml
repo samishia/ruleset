@@ -19,7 +19,10 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-
+override:
+skip-cert-verify: true
+udp: false
+global-ua: clash
 
 # 节点信息
 proxies:
@@ -34,12 +37,10 @@ tproxy-port: 7894
 allow-lan: true
 bind-address: "*"
 ipv6: false
-unified-delay: true
 tcp-concurrent: true
-log-level: warning
+log-level: info
 find-process-mode: 'off'
 # interface-name: en0
-global-client-fingerprint: chrome
 keep-alive-idle: 600
 keep-alive-interval: 15
 disable-keep-alive: false
@@ -49,10 +50,9 @@ profile:
 
 # 控制面板
 external-controller: 0.0.0.0:9090
-secret: ""
-external-ui: "/etc/mihomo/run/ui"
-external-ui-name: zashboard
-external-ui-url: "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"
+secret: "123456"
+external-ui: "/usr/share/openclash/ui"
+external-ui-name: zmetacubexd
 
 # 嗅探
 sniffer:
