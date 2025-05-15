@@ -9,11 +9,11 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 全球直连
-override:
-skip-cert-verify: true
-udp: false
-exclude-filter: "x4"
+   proxy: 🎯 全球直连
+   override:
+     skip-cert-verify: true
+     udp: false
+     exclude-filter: "x4"
  Airport2:
     url: "机场订阅"
     type: http
@@ -23,10 +23,10 @@ exclude-filter: "x4"
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🎯 全球直连
-override:
-skip-cert-verify: true
-udp: false
-exclude-filter: "x4"
+    override:
+      skip-cert-verify: true
+      udp: false
+      exclude-filter: "x4"
 
 
 global-ua: clash
