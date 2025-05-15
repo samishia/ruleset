@@ -273,7 +273,7 @@ proxy-groups:
   - {name: 🇺🇸 美国节点, type: url-test, include-all: true, filter: "美国"}
   - {name: 🇸🇬 新加坡节点, type: url-test, include-all: true, filter: "新加坡"}
   - {name: 🇹🇼 台湾节点, type: url-test, include-all: true, filter: "台湾"}
-  - {name: 💫 其他国家, type: url-test, include-all: true, filter: "^(?!.*(美国|日本|香港|新加坡|台湾|直连)).*"}
+  - {name: 💫 其他国家, type: url-test, include-all: true, filter: "^(?!.*(美国|日本|香港|新加坡|台湾|全球直连)).*"}
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
