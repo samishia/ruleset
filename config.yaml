@@ -2,20 +2,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "机场订阅"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-   proxy: 🎯 全球直连
-   override:
-     skip-cert-verify: true
-     udp: false
-     exclude-filter: "x4"
- Airport2:
-    url: "机场订阅"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -27,6 +14,19 @@ proxy-providers:
       skip-cert-verify: true
       udp: false
       exclude-filter: "x4"
+  Airport2:
+    url: ""
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 🎯 全球直连
+    override:
+     skip-cert-verify: true
+     udp: false
+     exclude-filter: "x4"
 
 
 global-ua: clash
