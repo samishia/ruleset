@@ -13,7 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
-      exclude-filter: "(?i)x4"
+    exclude-filter: "x4"
   Airport2:
     url: ""
     type: http
@@ -26,9 +26,7 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
-     exclude-filter: "(?i)x4"
-
-
+    exclude-filter: "x4"
 global-ua: clash
 
 # 节点信息
