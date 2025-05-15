@@ -254,7 +254,7 @@ dns:
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
-  - {name: ♻️ 自动选择, type: smart, include-all: true}
+  - {name: ♻️ 自动选择, type: smart, include-all: true, filter: "^(?!.*(全球直连)).*"}
   - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
