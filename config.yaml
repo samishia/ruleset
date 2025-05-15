@@ -284,27 +284,25 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
-  - RULE-SET,private_domain,直连
-  - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,proxylite,🚀 默认代理
-  - RULE-SET,ai,🤖 ChatGPT
-  - RULE-SET,github_domain,👨🏿‍💻 GitHub
-  - RULE-SET,youtube_domain,📹 YouTube
-  - RULE-SET,google_domain,🍀 Google
-  - RULE-SET,onedrive_domain,🐬 OneDrive
-  - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,tiktok_domain,🎵 TikTok
-  - RULE-SET,speedtest_domain,✈️ Speedtest
-  - RULE-SET,telegram_domain,📲 Telegram
-  - RULE-SET,netflix_domain,🎥 NETFLIX
-  - RULE-SET,paypal_domain,💶 PayPal
-  - RULE-SET,gfw_domain,🚀 默认代理
-  - RULE-SET,geolocation-!cn,🚀 默认代理
-  - RULE-SET,cn_domain,🎯 直连
-  - RULE-SET,google_ip,🍀 Google,no-resolve
-  - RULE-SET,netflix_ip,🎥 NETFLIX,no-resolve
-  - RULE-SET,telegram_ip,📲 Telegram,no-resolve
-  - RULE-SET,cn_ip,🎯 直连
+  - RULE-SET,mydirect,直连
+  - RULE-SET,myproxy,🍎 Apple
+  - RULE-SET,google-cn,🚀 默认代理
+  - RULE-SET,category-games@cn,🤖 ChatGPT
+  - RULE-SET,Steam_CDN,👨🏿‍💻 GitHub
+  - RULE-SET,Game_Download_CDN,📹 YouTube
+  - RULE-SET,steam,🍀 Google
+  - RULE-SET,category-games,🐬 OneDrive
+  - RULE-SET,Telegram,🪟 Microsoft
+  - RULE-SET,Twitter,🎵 TikTok
+  - RULE-SET,category-ai-!cn,✈️ Speedtest
+  - RULE-SET,github,📲 Telegram
+  - RULE-SET,YouTube,🎥 NETFLIX
+  - RULE-SET,Apple,💶 PayPal
+  - RULE-SET,Microsoft,🚀 默认代理
+  - RULE-SET,GoogleFCM,🚀 默认代理
+  - RULE-SET,Google,🎯 直连
+  - RULE-SET,GlobalMedia,🍀 Google,no-resolve
+  - RULE-SET,Global,🎥 NETFLIX,no-resolve
   - MATCH,🐟 漏网之鱼
 
 # 规则集
