@@ -26,8 +26,7 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
-    exclude-filter: "x4"
-global-ua: clash
+global-ua: clash.meta
 
 # 节点信息
 proxies:
