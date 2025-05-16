@@ -278,13 +278,11 @@ proxy-groups:
   - {name: 🇸🇬 新加坡节点, type: smart, include-all: true, filter: "新加坡"}
   - {name: 🇹🇼 台湾节点, type: smart, include-all: true, filter: "台湾"}
   - {name: 💫 其他国家, type: smart, include-all: true, filter: "^(?!.*(美国|日本|香港|新加坡|台湾|全球直连)).*"}
-  - {name: 🛑 广告拦截, type: select, proxies: [REJECT, DIRECT]}
-  
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
-  - RULE-SET,AWAvenue-Ads,🛑 广告拦截
+  - RULE-SET,AWAvenue-Ads,REJECT
   - RULE-SET,mydirect,🎯 全球直连
   - RULE-SET,myproxy,🇭🇰 香港节点
   - RULE-SET,google-cn,🎯 全球直连
