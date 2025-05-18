@@ -242,6 +242,8 @@ dns:
   - "+.uu.163.com"
   - ps.res.netease.com
   - "+.pub.3gppnetwork.org"
+  - "+.gcloudcs.com"
+  - "+.gcloudsdk.com"
 
   # namesever尽量用运营商提供的DNS
   default-nameserver:
