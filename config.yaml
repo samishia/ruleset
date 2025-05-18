@@ -284,16 +284,16 @@ rules:
   - RULE-SET,AWAvenue-Ads,🛑 广告拦截
   - RULE-SET,mydirect,🎯 全球直连
   - RULE-SET,myproxy,🇭🇰 香港节点
-  - RULE-SET,google-cn,🎯 全球直连
+  - RULE-SET,Google-cn,🎯 全球直连
   - RULE-SET,category-games@cn,🎯 全球直连
   - RULE-SET,Steam@cn,🎯 全球直连
   - RULE-SET,Game_Download_CDN,🎯 全球直连
-  - RULE-SET,steam,🎮 Steam
+  - RULE-SET,Steam,🎮 Steam
   - RULE-SET,category-games,🎮 游戏平台
   - RULE-SET,Telegram,📲 Telegram
   - RULE-SET,Twitter,🕊️ Twitter(X)
   - RULE-SET,category-ai-!cn,🤖 AI服务
-  - RULE-SET,github,🚀 GitHub
+  - RULE-SET,Github,🚀 GitHub
   - RULE-SET,YouTube,📹 YouTube
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
@@ -311,16 +311,16 @@ rule-anchor:
 rule-providers: 
   mydirect: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/mydirect.list"}
   myproxy: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/myproxy.list"}
-  google-cn: {  <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-cn.mrs" }
+  Google-cn: {  <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-cn.mrs" }
   category-games@cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games%40cn.mrs"}
   Steam@cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam%40cn.mrs"}
   Game_Download_CDN: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/Aethersailor/Custom_OpenClash_Rules/main/rule/Game_Download_CDN.list"}
-  steam: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.mrs"}
+  Steam: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam.mrs"}
   category-games: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games.mrs"}
   Telegram: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list"}
   Twitter: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"}
   category-ai-!cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.mrs"}
-  github: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs"}
+  Github: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs"}
   YouTube: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list"}
   Apple: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list"}
   Microsoft: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.mrs"}
