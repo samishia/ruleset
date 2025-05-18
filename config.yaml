@@ -248,10 +248,8 @@ dns:
     - 202.101.172.35
     - 202.101.172.46
   nameserver:
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
-    - https://doh.pub/dns-query
-    - https://doh.360.cn/dns-query
+    - 192.168.1.2:5335
+    - 114.114.114.114
     
  
 # 出站策略
