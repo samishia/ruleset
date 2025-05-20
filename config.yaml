@@ -244,7 +244,12 @@ dns:
   - "+.pub.3gppnetwork.org"
   - "+.gcloudcs.com"
   - "+.gcloudsdk.com"
+  - "+.steamcontent.com"
+  - "+.market.xiaomi.com"
+  - adguardteam.github.io
+  - anti-ad.net
 
+  
   # namesever尽量用运营商提供的DNS
   default-nameserver:
     - 202.101.172.35
