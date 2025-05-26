@@ -13,7 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
-    exclude-filter: "x4"
+    exclude-filter: "x4|x2"
   Airport2:
     url: ""
     type: http
