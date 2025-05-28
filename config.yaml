@@ -255,7 +255,7 @@ dns:
     - 192.168.1.2:5335
     - 192.168.1.1:5335
   nameserver-policy:
-    "geosite:cn,private,apple":
+    "geosite:cn":
       - 202.101.172.35
       - 202.101.172.46
 
