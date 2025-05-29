@@ -252,18 +252,14 @@ dns:
   
   # namesever尽量用运营商提供的DNS
   nameserver:
-    - 192.168.1.2:5335
-    - 192.168.1.1:5335
-  nameserver-policy:
-    "geosite:cn":
-      - 202.101.172.35
-      - 202.101.172.46
+    - 223.5.5.5
+    - 114.114.114.114
 
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
-  - {name: ♻️ 自动选择, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "^(?!.*(全球直连)).*"}
+  - {name: ♻️ 自动选择, type: url-test, include-all: true, filter: "^(?!.*(全球直连)).*"}
   - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
@@ -277,12 +273,12 @@ proxy-groups:
   - {name: 🎮 Steam, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 游戏平台, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 🇭🇰 香港节点, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "香港|HK"}
-  - {name: 🇯🇵 日本节点, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "日本|japan"}
-  - {name: 🇺🇸 美国节点, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "美国"}
-  - {name: 🇸🇬 新加坡节点, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "新加坡"}
-  - {name: 🇹🇼 台湾节点, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "台湾"}
-  - {name: 💫 其他国家, type: smart, include-all: true, collectdata: true, uselightgbm: true, filter: "^(?!.*(美国|日本|香港|新加坡|台湾|全球直连)).*"}
+  - {name: 🇭🇰 香港节点, type: url-test, include-all: true, filter: "香港|HK"}
+  - {name: 🇯🇵 日本节点, type: url-test, include-all: true, filter: "日本|japan"}
+  - {name: 🇺🇸 美国节点, type: url-test, include-all: true, filter: "美国"}
+  - {name: 🇸🇬 新加坡节点, type: url-test, include-all: true, filter: "新加坡"}
+  - {name: 🇹🇼 台湾节点, type: url-test, include-all: true, filter: "台湾"}
+  - {name: 💫 其他国家, type: url-test, include-all: true, filter: "^(?!.*(美国|日本|香港|新加坡|台湾|全球直连)).*"}
   - {name: 🛑 广告拦截, type: select, proxies: [REJECT, DIRECT]}
 
 # 规则匹配
