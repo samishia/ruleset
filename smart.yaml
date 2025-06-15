@@ -4,7 +4,7 @@ proxy-providers:
   Airport1:
     url: ""
     type: http
-    interval: 86400
+    interval: 43200
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -17,7 +17,7 @@ proxy-providers:
   Airport2:
     url: ""
     type: http
-    interval: 86400
+    interval: 43200
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -252,8 +252,8 @@ dns:
   
   # namesever尽量用运营商提供的DNS
   nameserver:
-    - 192.168.1.2:5335
-    - 192.168.1.1:5335
+    - 192.168.1.2
+    - 127.0.0.1:5335
   nameserver-policy:
     "geosite:cn":
       - 202.101.172.35
