@@ -4,7 +4,7 @@ proxy-providers:
   Airport1:
     url: ""
     type: http
-    interval: 86400
+    interval: 43200
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
@@ -17,7 +17,7 @@ proxy-providers:
   Airport2:
     url: ""
     type: http
-    interval: 86400
+    interval: 43200
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
