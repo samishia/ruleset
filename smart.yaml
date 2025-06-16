@@ -93,6 +93,7 @@ sniffer:
   
 # DNS模块
 dns:
+  cache-algorithm: arc
   enable: true
   listen: 0.0.0.0:7874
   ipv6: false
