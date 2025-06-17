@@ -16,7 +16,7 @@ custom-isp: # 自定义运营商  IP分流
 stream-domain: # 域名分流 可选功能，优先级比ip分流高
   # 下面是自动走wan1直连的，
   - interface: wan1
-    src-addr: 192.168.1.3-192.168.1.100
+    src-addr: 192.168.1.4-192.168.1.100,192.168.1.2
     # 作者自己维护的自定义的域名列表(只是演示,请自行维护) 主要存放github的镜像网站等国内可以直连的镜像或其他类型域名
     url: https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/China_Domain.txt
     tag: private_direct
