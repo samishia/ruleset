@@ -249,6 +249,8 @@ dns:
   - "+.market.xiaomi.com"
   - adguardteam.github.io
   - anti-ad.net
+  - images-eds-ssl.xboxlive.com
+  - store-images.s-microsoft.com
   - geosite:cn
   - geosite:apple
 
