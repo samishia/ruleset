@@ -457,7 +457,6 @@ apollo.auto
 appchina.com
 appeeres.com
 appinn.com
-apple.com
 applysquare.com
 applysquare.net
 appshike.com
@@ -1138,7 +1137,6 @@ didichuxing.com
 didiglobal.com
 didimobility.co.jp
 didistatic.com
-digicert.com
 dig.bdurl.net
 dingding.xin
 dingtalk.com
@@ -2181,7 +2179,6 @@ liqucn.com
 liulanqi.net
 liulishuo.com
 liuxiaoer.com
-livehwc4.com
 live800.com
 livechina.com
 liweijia.com
@@ -3172,7 +3169,6 @@ uewaf.com
 ufileos.com
 ugdtimg.com
 uggame.com
-ugreen.cloud
 ugslb.com
 ugslb.info
 ugslb.net
