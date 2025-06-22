@@ -2,7 +2,7 @@
 ikuai-url: http://192.168.1.1 # 爱快网页控制台登陆地址 结尾不要加 "/"，如在爱快docker内运行，网关就是爱快地址，可以不写，如不填写，则使用第一个接口的网关地址，
 username: admin # ikuai username 爱快登陆用户名
 password: Lhq46688 # ikuai user password爱快登陆密码
-cron: 0 7 * * 1 # crontab 执行更新的周期 格式为linux crontab 格式 注意时区问题，也可以用  @every 24h00m00s  表示每间隔24小时执行一次 openwrt可能需要处理时区 https://github.com/joyanhui/ikuai-bypass/issues/33
+cron: 0 7 * * 3 # crontab 执行更新的周期 格式为linux crontab 格式 注意时区问题，也可以用  @every 24h00m00s  表示每间隔24小时执行一次 openwrt可能需要处理时区 https://github.com/joyanhui/ikuai-bypass/issues/33
 AddErrRetryWait: 10s # 自动重试时间间隔 时间格式为 10s  120s
 AddWait: 1s # 添加规则后等待时间 等待爱快反应 适合性能低的设备
 
@@ -12,7 +12,7 @@ custom-isp: # 自定义运营商  IP分流
     ## 下面演示规则使用了ghproxy.com的代理，如果失效请自行更换或另外想办法，建议使用https://github.com/hunshcn/gh-proxy自建
     url: https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
     tag: ipcn # 规则的备注标签后缀 如果留空默认为自定义运营商名称
-  - name: appleIP列表 # 自定义运营商名称
+  - name: appleiP列表 # 自定义运营商名称
     ## 自定义运营商 cidr 列表网址，每行一个，超过5000行会自动分为多个，ipv6 地址会被删除
     ## 下面演示规则使用了ghproxy.com的代理，如果失效请自行更换或另外想办法，建议使用https://github.com/hunshcn/gh-proxy自建
     url: https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/appleip.txt
