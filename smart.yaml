@@ -13,6 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
+      additional-prefix: "A1 |"
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
@@ -26,6 +27,7 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
+     additional-prefix: "A2 |"
 global-ua: clash.meta
 
 # 节点信息
@@ -251,7 +253,6 @@ dns:
   - anti-ad.net
   - images-eds-ssl.xboxlive.com
   - store-images.s-microsoft.com
-  - geosite:cn
   - geosite:apple
 
   
