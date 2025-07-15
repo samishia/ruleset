@@ -28,7 +28,7 @@ proxy-providers:
      skip-cert-verify: true
      udp: false
      additional-prefix: "A2|"
-global-ua: clash.meta
+global-ua: clash-verge/v2.3.1
 
 # 节点信息
 proxies:
