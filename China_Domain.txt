@@ -3701,3 +3701,6 @@ anticheatexpert.com
 douyucdn.cn
 wpscdn.cn
 dbankcloud.cn
+my-imcloud.com
+msstatic.com
+xionguamaqui.com
