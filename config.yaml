@@ -13,6 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
+      additional-prefix: "A1|"
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
@@ -26,7 +27,8 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
-global-ua: clash.meta
+     additional-prefix: "A2|"
+global-ua: clash-verge/v2.3.1
 
 # 节点信息
 proxies:
@@ -52,12 +54,6 @@ disable-keep-alive: false
 profile:
   store-selected: true
   store-fake-ip: true
-
-# 控制面板
-external-controller: 0.0.0.0:9090
-secret: "123456"
-external-ui: "/usr/share/openclash/ui"
-external-ui-name: zmetacubexd
 
 # 嗅探
 sniffer:
@@ -248,6 +244,10 @@ dns:
   - "+.market.xiaomi.com"
   - adguardteam.github.io
   - anti-ad.net
+  - images-eds-ssl.xboxlive.com
+  - store-images.s-microsoft.com
+  - geosite:apple
+  - geosite:cn
 
   
   # namesever尽量用运营商提供的DNS
