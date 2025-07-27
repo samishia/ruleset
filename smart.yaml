@@ -61,12 +61,6 @@ secret: "123456"
 external-ui: "/usr/share/openclash/ui"
 external-ui-name: zmetacubexd
 
-# 自定义 geodata url
-geox-url:
-  geosite: "https://ghfast.top/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
-
-geo-auto-update: true # 是否自动更新 geodata
-geo-update-interval: 24 # 更新间隔，单位：小时
 # 嗅探
 sniffer:
   enable: true
