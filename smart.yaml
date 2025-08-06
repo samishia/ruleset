@@ -57,7 +57,7 @@ profile:
 
 # 控制面板
 external-controller: 0.0.0.0:9090
-secret: '123456'
+secret: "123456"
 external-ui: "/usr/share/openclash/ui"
 external-ui-name: metacubexd
 
