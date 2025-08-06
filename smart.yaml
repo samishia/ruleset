@@ -345,6 +345,6 @@ lgbm-auto-update: true
 lgbm-custom-url: https://github.com/vernesong/mihomo/releases/download/LightGBM-Model/model-large.bin
 lgbm-update-interval: 72
 geox-url:
-  geosite: https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat
+  geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
 geo-auto-update: true
 geo-update-interval: 24
