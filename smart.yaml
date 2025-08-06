@@ -54,6 +54,7 @@ disable-keep-alive: false
 profile:
   store-selected: true
   store-fake-ip: true
+  smart-collector-size: 100
 
 # 控制面板
 external-controller: 0.0.0.0:9090
