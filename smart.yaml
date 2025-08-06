@@ -45,7 +45,7 @@ bind-address: "*"
 ipv6: false
 mode: rule
 tcp-concurrent: true
-log-level: info
+log-level: debug
 find-process-mode: 'off'
 # interface-name: en0
 keep-alive-idle: 600
