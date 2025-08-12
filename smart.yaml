@@ -13,7 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
-      additional-prefix: "A1|"
+      additional-prefix: "A1-"
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
@@ -27,7 +27,7 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
-     additional-prefix: "A2|"
+     additional-prefix: "A2-"
 global-ua: clash-verge/v2.3.1
 
 # 节点信息
@@ -281,7 +281,7 @@ proxy-groups:
   - {name: 🎮 Steam, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 游戏平台, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 🇭🇰 香港节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: true, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "香港|HK"}
+  - {name: 🇭🇰 香港节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: true, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "香港|HK|A1-剩余|A1-套餐"}
   - {name: 🇯🇵 日本节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: true, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "日本|japan|JP"}
   - {name: 🇺🇸 美国节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: true, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "美国|US"}
   - {name: 🇸🇬 新加坡节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: true, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "新加坡|SG"}
