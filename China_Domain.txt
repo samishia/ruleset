@@ -1,7 +1,3 @@
-analytics.strava.com
-blzddist1-a.akamaihd.net
-cdn.angruo.com
-client.amplifi.com
 download.jetbrains.com
 download.microsoft.com
 images-cn.ssl-images-amazon.com
