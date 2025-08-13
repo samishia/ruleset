@@ -1,12 +1,6 @@
 download.microsoft.com
-ntservicepack.microsoft.com
-origin-a.akamaihd.ne
-origin-a.akamaihd.net
-sms.imagetasks.com
-steamcommunity-a.akamaihd.net
 weixin.com
 www.libvideo.com
-www.yxssp.com
 00cdn.com
 0123456789.com
 0379home.com
