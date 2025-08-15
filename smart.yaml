@@ -251,10 +251,6 @@ dns:
   - "+.gcloudsdk.com"
   - "+.steamcontent.com"
   - "+.market.xiaomi.com"
-  - adguardteam.github.io
-  - anti-ad.net
-  - images-eds-ssl.xboxlive.com
-  - store-images.s-microsoft.com
   - geosite:apple
   - geosite:cn
 
@@ -269,7 +265,7 @@ dns:
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
   - {name: ♻️ 自动选择, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: false, uselightgbm: true, strategy: round-robin, sample-rate: 1, filter: "^(?!.*(全球直连)).*"}
-  - {name: 🚀 GitHub, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🇯🇵 日本节点]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🤖 AI服务, type: select, proxies: [🇺🇸 美国节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇭🇰 香港节点, 💫 其他国家, 🚀 节点选择]}
@@ -280,7 +276,7 @@ proxy-groups:
   - {name: 📢 谷歌FCM, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🇬 谷歌服务, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 Steam, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 🎮 游戏平台, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 🎮 游戏平台, type: select, proxies: [💫 其他国家, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🇭🇰 香港节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: false, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "香港|HK|A1-剩余|A1-套餐"}
   - {name: 🇯🇵 日本节点, type: smart, include-all: true, policy-priority: "A1:0.8;A2:1.3", collectdata: false, uselightgbm: true, strategy: sticky-sessions, sample-rate: 1, filter: "日本|japan|JP"}
@@ -307,6 +303,7 @@ rules:
   - RULE-SET,Twitter,🕊️ Twitter(X)
   - RULE-SET,category-ai-!cn,🤖 AI服务
   - RULE-SET,Github,🚀 GitHub
+  - RULE-SET,Bahamut,🇹🇼 台湾节点
   - RULE-SET,YouTube,📹 YouTube
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
@@ -334,7 +331,8 @@ rule-providers:
   Twitter: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"}
   category-ai-!cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.mrs"}
   Github: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs"}
-  YouTube: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list"}
+  Bahamut: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bahamut.mrs"}
+  YouTube: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.mrs"}
   Apple: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list"}
   Microsoft: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.mrs"}
   GoogleFCM: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list"}
