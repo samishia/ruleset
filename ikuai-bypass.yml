@@ -17,11 +17,3 @@ custom-isp: # 自定义运营商  IP分流
     ## 下面演示规则使用了ghproxy.com的代理，如果失效请自行更换或另外想办法，建议使用https://github.com/hunshcn/gh-proxy自建
     url: https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/appleip.txt
     tag: appleip # 规则的备注标签后缀 如果留空默认为自定义运营商名称
-
-stream-domain: # 域名分流 可选功能，优先级比ip分流高
-  # 下面是自动走wan1直连的，
-  - interface: wan1
-    src-addr: 192.168.1.4-192.168.1.100,192.168.1.2
-    # 作者自己维护的自定义的域名列表(只是演示,请自行维护) 主要存放github的镜像网站等国内可以直连的镜像或其他类型域名
-    url: https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/China_Domain.txt
-    tag: private_direct
