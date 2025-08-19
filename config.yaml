@@ -13,7 +13,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: false
-      additional-prefix: "A1|"
+      additional-prefix: "A1-"
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
@@ -27,7 +27,7 @@ proxy-providers:
     override:
      skip-cert-verify: true
      udp: false
-     additional-prefix: "A2|"
+     additional-prefix: "A2-"
 global-ua: clash-verge/v2.3.1
 
 # 节点信息
@@ -243,10 +243,6 @@ dns:
   - "+.gcloudsdk.com"
   - "+.steamcontent.com"
   - "+.market.xiaomi.com"
-  - adguardteam.github.io
-  - anti-ad.net
-  - images-eds-ssl.xboxlive.com
-  - store-images.s-microsoft.com
   - geosite:apple
   - geosite:cn
 
@@ -261,7 +257,7 @@ dns:
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, filter: "^(?!.*(全球直连)).*"}
-  - {name: 🚀 GitHub, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🇯🇵 日本节点]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🤖 AI服务, type: select, proxies: [🇺🇸 美国节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇭🇰 香港节点, 💫 其他国家, 🚀 节点选择]}
@@ -269,12 +265,11 @@ proxy-groups:
   - {name: 🌎 国外媒体, type: select, proxies: [🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🍎 苹果服务, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 📢 谷歌FCM, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🇬 谷歌服务, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 Steam, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 游戏平台, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 🇭🇰 香港节点, type: url-test, include-all: true, filter: "香港|HK"}
+  - {name: 🇭🇰 香港节点, type: url-test, include-all: true, filter: "香港|HK|A1-剩余|A1-套餐"}
   - {name: 🇯🇵 日本节点, type: url-test, include-all: true, filter: "日本|japan|JP"}
   - {name: 🇺🇸 美国节点, type: url-test, include-all: true, filter: "美国|US"}
   - {name: 🇸🇬 新加坡节点, type: url-test, include-all: true, filter: "新加坡|SG"}
@@ -299,10 +294,10 @@ rules:
   - RULE-SET,Twitter,🕊️ Twitter(X)
   - RULE-SET,category-ai-!cn,🤖 AI服务
   - RULE-SET,Github,🚀 GitHub
+  - RULE-SET,Bahamut,🇹🇼 台湾节点
   - RULE-SET,YouTube,📹 YouTube
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,GoogleFCM,📢 谷歌FCM
   - RULE-SET,Google,🇬 谷歌服务
   - RULE-SET,GlobalMedia,🌎 国外媒体
   - RULE-SET,Global,🚀 节点选择
@@ -326,12 +321,16 @@ rule-providers:
   Twitter: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list"}
   category-ai-!cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.mrs"}
   Github: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github.mrs"}
-  YouTube: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list"}
+  Bahamut: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bahamut.mrs"}
+  YouTube: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/youtube.mrs"}
   Apple: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list"}
   Microsoft: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.mrs"}
-  GoogleFCM: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleFCM/GoogleFCM.list"}
   Google: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list"}
   GlobalMedia: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.list"}
   Global: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"}
   AWAvenue-Ads: {  <<: *domain, url: "https://ghfast.top/https://github.com/TG-Twilight/AWAvenue-Ads-Rule/raw/refs/heads/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"}
   anti-ad: {  <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
+geox-url:
+  geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
+geo-auto-update: true
+geo-update-interval: 24
