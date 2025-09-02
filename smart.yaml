@@ -83,7 +83,6 @@ sniffer:
   - "+.nflxvideo.net"
   - "+.amazonaws.com"
   - "+.media.dssott.com"
-  - "+.v2ex.com"
   skip-domain:
   - "+.apple.com"
   - Mijia Cloud
@@ -92,6 +91,7 @@ sniffer:
   - "+.sunlogin.net"
   - "+.push.apple.com"
   parse-pure-ip: true
+  force-dns-mapping: true
 
 # DNS模块
 dns:
