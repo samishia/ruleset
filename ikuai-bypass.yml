@@ -11,7 +11,7 @@ custom-isp: # 自定义运营商  IP分流
     ## 自定义运营商 cidr 列表网址，每行一个，超过5000行会自动分为多个，ipv6 地址会被删除
     ## 下面演示规则使用了ghproxy.com的代理，如果失效请自行更换或另外想办法，建议使用https://github.com/hunshcn/gh-proxy自建
     url: https://ghfast.top/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
-    tag: ipcn # 规则的备注标签后缀 如果留空默认为自定义运营商名称
+    tag: cnip # 规则的备注标签后缀 如果留空默认为自定义运营商名称
   - name: appleiP列表 # 自定义运营商名称
     ## 自定义运营商 cidr 列表网址，每行一个，超过5000行会自动分为多个，ipv6 地址会被删除
     ## 下面演示规则使用了ghproxy.com的代理，如果失效请自行更换或另外想办法，建议使用https://github.com/hunshcn/gh-proxy自建
