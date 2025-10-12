@@ -12,7 +12,7 @@ proxy-providers:
     proxy: 🎯 全球直连
     override:
       skip-cert-verify: true
-      udp: false
+      udp: true
       additional-prefix: "A1-"
     exclude-filter: "x4|x2"
   Airport2:
@@ -26,7 +26,7 @@ proxy-providers:
     proxy: 🎯 全球直连
     override:
      skip-cert-verify: true
-     udp: false
+     udp: true
      additional-prefix: "A2-"
 global-ua: clash-verge/v2.3.1
 
