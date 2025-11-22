@@ -103,6 +103,8 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
   - "*.lan"
+  +.msftconnecttest.com
+   +.msftncsi.com
   - geosite:apple
   - geosite:cn
 
