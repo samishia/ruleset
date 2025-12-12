@@ -40,8 +40,7 @@ proxy-providers:
     override:
       skip-cert-verify: true
       udp: true
-      additional-prefix: "A1-"
-    exclude-filter: "x4|x2"
+      additional-prefix: "A3-"
 global-ua: clash-verge/v2.3.1
 
 # 节点信息
