@@ -28,6 +28,20 @@ proxy-providers:
      skip-cert-verify: true
      udp: true
      additional-prefix: "A2-"
+  Airport3:
+    url: ""
+    type: http
+    interval: 43200
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 🎯 全球直连
+    override:
+      skip-cert-verify: true
+      udp: true
+      additional-prefix: "A1-"
+    exclude-filter: "x4|x2"
 global-ua: clash-verge/v2.3.1
 
 # 节点信息
