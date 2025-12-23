@@ -157,7 +157,7 @@ rules:
   - RULE-SET,Google-cn,🎯 全球直连
   - RULE-SET,category-games@cn,🎯 全球直连
   - RULE-SET,Steam@cn,🎯 全球直连
-  - RULE-SET,category-games@cn,🎯 全球直连
+  - RULE-SET,category-game-platforms-download@cn,🎯 全球直连
   - RULE-SET,Steam,🎮 Steam
   - RULE-SET,category-games,🎮 游戏平台
   - RULE-SET,Telegram,📲 Telegram
