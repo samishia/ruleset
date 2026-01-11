@@ -3,7 +3,7 @@
 proxy-providers:
   Airport1:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -17,7 +17,7 @@ proxy-providers:
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -30,7 +30,7 @@ proxy-providers:
      additional-prefix: "A2-"
   Airport3:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -119,8 +119,8 @@ dns:
   
   # namesever尽量用运营商提供的DNS
   nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
 
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
