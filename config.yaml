@@ -154,7 +154,6 @@ rules:
   - RULE-SET,anti-ad,🛑 广告拦截
   - RULE-SET,mydirect,🎯 全球直连
   - RULE-SET,myproxy,🇭🇰 香港节点
-  - RULE-SET,Google-cn,🎯 全球直连
   - RULE-SET,category-games@cn,🎯 全球直连
   - RULE-SET,Steam@cn,🎯 全球直连
   - RULE-SET,category-game-platforms-download@cn,🎯 全球直连
@@ -181,7 +180,6 @@ rule-anchor:
 rule-providers: 
   mydirect: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/mydirect.list"}
   myproxy: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/samishia/ruleset/refs/heads/main/myproxy.list"}
-  Google-cn: {  <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-cn.mrs" }
   category-games@cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games%40cn.mrs"}
   Steam@cn: { <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/steam%40cn.mrs"}
   category-game-platforms-download@cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-game-platforms-download%40cn.mrs"}
