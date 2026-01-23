@@ -3,7 +3,7 @@
 proxy-providers:
   Airport1:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -17,7 +17,7 @@ proxy-providers:
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -30,7 +30,7 @@ proxy-providers:
      additional-prefix: "A2-"
   Airport3:
     url: ""
-    type: http
+    输入: http
     interval: 43200
     health-check:
       enable: true
@@ -125,7 +125,7 @@ dns:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
+  - {name: 🚀 节点选择, type: select, proxies: [🇭🇰 香港节点， 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, ♻️ 自动选择]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, filter: "^(?!.*(全球直连)).*"}
   - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🇯🇵 日本节点]}
   - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
@@ -137,7 +137,7 @@ proxy-groups:
   - {name: Ⓜ️ 微软服务, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🇬 谷歌服务, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🎮 Steam, type: select, proxies: [🇭🇰 香港节点, 🎯 全球直连, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 🎮 游戏平台, type: select, proxies: [💫 其他国家, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 🚀 节点选择]}
+  - {name: 🎮 游戏平台, type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🎯 全球直连, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🇭🇰 香港节点, type: url-test, include-all: true, filter: "香港|HK|A1-剩余|A1-套餐"}
   - {name: 🇯🇵 日本节点, type: url-test, include-all: true, filter: "日本|japan|JP"}
