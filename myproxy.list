@@ -17,7 +17,8 @@ DOMAIN,bbs.acgrip.com
 DOMAIN,video.31dm.com
 DOMAIN,t76.btc760.com
 DOMAIN,img.m-team.cc
-
+#mutefun
+DOMAIN,www.ishoutu.net
 DOMAIN-SUFFIX,canhuashe.com
 DOMAIN-SUFFIX,north-plus.net
 DOMAIN-SUFFIX,white-plus.net
@@ -46,6 +47,7 @@ DOMAIN-SUFFIX,asmrgay.com
 DOMAIN-SUFFIX,hacg.icu
 DOMAIN-SUFFIX,lolowu.com
 DOMAIN-KEYWORD,bachashuku
+
 
 
 
