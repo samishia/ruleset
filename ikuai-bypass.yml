@@ -1,7 +1,7 @@
 ikuai-url: http://192.168.1.1 # 爱快控制台地址，结尾不要加 "/"
 username: admin # 爱快登陆用户名
 password: Lhq46688 # 爱快登陆密码
-cron: 0 2 * * 4 # 更新周期cron表达式，例如 0 7 * * *
+cron: 0 2 * * 5 # 更新周期cron表达式，例如 0 7 * * *
 AddErrRetryWait: 10s # 自动重试时间间隔 (10s, 120s)
 AddWait: 1s # 规则添加后的反应等待时间
 github-proxy: "https://gh-proxy.com/" # Github代理加速地址，例如 https://gh-proxy.com/ (留空不使用)
