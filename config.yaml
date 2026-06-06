@@ -125,10 +125,10 @@ dns:
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, ♻️ 自动选择]}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 自动选择, 🇭🇰香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, ♻️ 自动选择]}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, filter: "^(?!.*(全球直连)).*"}
-  - {name: 🚀 GitHub, type: select, proxies: [🚀 节点选择, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🇯🇵 日本节点]}
-  - {name: 📲 Telegram, type: select, proxies: [🚀 节点选择, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家]}
+  - {name: 🚀 GitHub, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 📲 Telegram, type: select, proxies: [🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🤖 AI服务, type: select, proxies: [🇺🇸 美国节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇭🇰 香港节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 📹 YouTube, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
@@ -151,7 +151,6 @@ proxy-groups:
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - RULE-SET,AWAvenue-Ads,🛑 广告拦截
-  - RULE-SET,anti-ad,🛑 广告拦截
   - RULE-SET,mydirect,🎯 全球直连
   - RULE-SET,myproxy,🇭🇰 香港节点
   - RULE-SET,category-games@cn,🎯 全球直连
@@ -197,4 +196,3 @@ rule-providers:
   GlobalMedia: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.list"}
   Global: { <<: *class, url: "https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Global/Global.list"}
   AWAvenue-Ads: {  <<: *domain, url: "https://ghfast.top/https://github.com/TG-Twilight/AWAvenue-Ads-Rule/raw/refs/heads/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"}
-  anti-ad: {  <<: *domain, url: "https://ghfast.top/https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"}
