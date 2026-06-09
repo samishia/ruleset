@@ -3,7 +3,7 @@
 proxy-providers:
   Airport1:
     url: ""
-    输入: http
+    type: http
     interval: 43200
     health-check:
       enable: true
@@ -17,7 +17,7 @@ proxy-providers:
     exclude-filter: "x4|x2"
   Airport2:
     url: ""
-    输入: http
+    type: http
     interval: 43200
     health-check:
       enable: true
@@ -30,7 +30,7 @@ proxy-providers:
      additional-prefix: "A2-"
   Airport3:
     url: ""
-    输入: http
+    type: http
     interval: 43200
     health-check:
       enable: true
