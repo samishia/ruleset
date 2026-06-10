@@ -132,8 +132,8 @@ dns:
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, ♻️ 自动选择]}
   - {name: ♻️ 自动选择, type: smart, include-all: true, collectdata: false, uselightgbm: true, prefer-asn: true, sample-rate: 1, filter: "^(?!.*(全球直连)).*"}
-  - {name: 🚀 GitHub, type: select, proxies: [🇯🇵 日本节点， 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
-  - {name: 📲 Telegram, type: select, proxies: [🇸🇬 新加坡节点， 🇯🇵 日本节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 🚀 GitHub, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
+  - {name: 📲 Telegram, type: select, proxies: [🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🕊️ Twitter(X), type: select, proxies: [🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 🤖 AI服务, type: select, proxies: [🇺🇸 美国节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇭🇰 香港节点, 💫 其他国家, 🚀 节点选择]}
   - {name: 📹 YouTube, type: select, proxies: [🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 新加坡节点, 🇹🇼 台湾节点, 🇺🇸 美国节点, 💫 其他国家, 🚀 节点选择]}
