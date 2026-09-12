@@ -174,7 +174,7 @@ rules:
   - RULE-SET,Microsoft,Ⓜ️ 微软服务
   - RULE-SET,Google,🇬 谷歌服务
   - RULE-SET,GlobalMedia,🌎 国外媒体
-  - RULE-SET,Global,🚀 节点选择
+  - RULE-SET,Global,♻️ 故障转移
   - MATCH,🐟 漏网之鱼
 
 # 规则集
