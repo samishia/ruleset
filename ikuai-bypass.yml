@@ -1,4 +1,5 @@
-ikuai-url: http://192.168.1.1 # 爱快控制台地址，结尾不要加 "/"
+ikuai-url: https://192.168.1.1 # 爱快控制台地址，结尾不要加 "/"
+ikuai-url-ignore-cert: true
 username: admin # 爱快登陆用户名
 password: Lhq46688 # 爱快登陆密码
 cron: 0 2 * * 5 # 更新周期cron表达式，例如 0 7 * * *
