@@ -4,7 +4,7 @@ password: Lhq46688 # 爱快登陆密码
 cron: 0 2 * * 5 # 更新周期cron表达式，例如 0 7 * * *
 AddErrRetryWait: 10s # 自动重试时间间隔 (10s, 120s)
 AddWait: 1s # 规则添加后的反应等待时间
-github-proxy: "https://gh-proxy.com/" # Github代理加速地址，例如 https://gh-proxy.com/ (留空不使用)
+github-proxy: "https://ghfast.top/" # Github代理加速地址，例如 https://gh-proxy.com/ (留空不使用)
 custom-isp: # 自定义运营商分流 (IP分流)
   - tag: 国内IP列表
     url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/text/cn.txt
