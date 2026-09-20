@@ -126,13 +126,16 @@ dns:
   ipv6: true
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter-mode: blacklist
+  fake-ip-filter-mode: rule
   fake-ip-filter:
-  - "*.lan"
-  - "+.msftconnecttest.com"
-  - "+.msftncsi.com"
-  - geosite:apple
-  - geosite:cn
+  - DOMAIN,services.googleapis.cn,fake-ip
+  - DOMAIN,xn--ngstr-lra8j.com,fake-ip
+  - DOMAIN-SUFFIX,googleapis.cn,fake-ip
+  - DOMAIN-SUFFIX,msftconnecttest.com,real-ip
+  - DOMAIN-SUFFIX,msftncsi.com,real-ip
+  - GEOSITE,apple,real-ip
+  - GEOSITE,cn,real-ip
+  - MATCH,fake-ip
 
   
   # namesever尽量用运营商提供的DNS
