@@ -128,7 +128,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: rule
   fake-ip-filter:
-  - '+.sh-cloudflare.sbs',real-ip
+  - '+.dns01.shanhai.you',real-ip
   - DOMAIN,services.googleapis.cn,fake-ip
   - DOMAIN,xn--ngstr-lra8j.com,fake-ip
   - DOMAIN-SUFFIX,googleapis.cn,fake-ip
