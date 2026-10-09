@@ -124,8 +124,8 @@ dns:
   fake-ip-filter-mode: rule
   fake-ip-filter:
   - DOMAIN-SUFFIX,shanhai.you,real-ip
-  - DOMAIN,services.googleapis.cn,fake-ip
-  - DOMAIN,xn--ngstr-lra8j.com,fake-ip
+  - DOMAIN-SUFFIX,services.googleapis.cn,fake-ip
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,fake-ip
   - DOMAIN-SUFFIX,googleapis.cn,fake-ip
   - DOMAIN-SUFFIX,msftconnecttest.com,real-ip
   - DOMAIN-SUFFIX,msftncsi.com,real-ip
