@@ -148,7 +148,8 @@ dns:
     '+.sh-cloudflare.sbs':
     - https://dns01.shanhai.you:16666/dns-query
     - https://dns02.shanhai.you:16666/dns-query
-    - https://dns03.shanhai.you:16666/dns-query
+    - https://120.76.130.89:16666/dns-query
+    - https://47.99.65.147:16666/dns-query
 
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
